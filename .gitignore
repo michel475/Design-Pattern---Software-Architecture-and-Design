@@ -1,0 +1,11 @@
+BarbarianClass.class
+ClassPlayer.class
+ClassPlayerFactory.class
+ClassSkillFactory.class
+CombatSkill.class
+factoryExample.class
+HealingSkill.class
+ManaSkill.class
+Skill.class
+WarriorClass.class
+WizardClass.class
