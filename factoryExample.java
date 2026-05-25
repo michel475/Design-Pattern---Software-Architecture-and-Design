@@ -126,5 +126,8 @@ public class factoryExample {
         obj.addSkill(newSkill);
         obj.addSkill(newSkill2);
         obj.showSkills();
+
+        //inicialmente instancia-se o player e em seguida instancia as skills
+        //instanciei duas skills também utilizando o factory
     }
 }
