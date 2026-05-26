@@ -131,5 +131,7 @@ public class NoFactory{
         jogador.addSkill(sk);
         System.out.println(jogador.getClass());
         jogador.showSkills();
+
+        sc.close();
     }
 }
