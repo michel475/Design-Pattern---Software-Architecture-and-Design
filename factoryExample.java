@@ -78,7 +78,7 @@ class ClassSkillFactory {
             case "healing":
                 return new HealingSkill(skillName, cost, points);
             default:
-                return null;
+                throw new IllegalArgumentException("Grupo de skill não encontrado");
         }
     }
 }
@@ -187,7 +187,7 @@ public class factoryExample {
     public static void main(String args[]) {
 
         //Player 1
-        System.out.println("Player 1");
+        System.out.println("Player 1"); 
         //instancia o player utilizando o factory
         MenuClasseResult resultPlayer1 = menuClasse();
         ClassPlayer obj1 = ClassPlayerFactory.create(resultPlayer1.classe, resultPlayer1.nivel);

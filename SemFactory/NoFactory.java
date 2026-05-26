@@ -92,7 +92,7 @@ public class NoFactory{
         System.out.println("Qual o nível?");
         int nivel = sc.nextInt();
 
-        ClassPlayer jogador = null; //= new ClassPlayer(classe, nivel);
+        ClassPlayer jogador = null;
 
         if(classe.equals("warrior")){
             jogador = new WarriorClass(classe, nivel);
