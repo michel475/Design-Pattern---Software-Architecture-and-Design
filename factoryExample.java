@@ -149,19 +149,16 @@ public class factoryExample {
         Scanner sc = new Scanner(System.in);
         String skillGroup;
         
-        System.out.println("Escolha um tipo de Skill");
-        System.out.println("mana");
-        System.out.println("combat");
-        System.out.println("healing");
+        System.out.printf("Escolha um tipo de Skill 💡 mana, combat ou healing: ");
         skillGroup = sc.nextLine();
             
-        System.out.println("Qual o nome da skill?");
+        System.out.printf("Qual o nome da skill?: ");
         String skillName = sc.nextLine();
 
-        System.out.println("Qual o custo da skill?");
+        System.out.printf("Qual o custo da skill?: ");
         int cost = sc.nextInt();
 
-        System.out.println("Qual o dano da skill?");
+        System.out.printf("Qual o dano da skill?: ");
         int damage = sc.nextInt();
         sc.nextLine(); // Consume the newline character
 
@@ -172,13 +169,10 @@ public class factoryExample {
         Scanner sc = new Scanner(System.in);
         String classe;
         
-        System.out.println("Escolha uma Classe");
-        System.out.println("wizard");
-        System.out.println("warrior");
-        System.out.println("barbarian");
+        System.out.printf("Digite a categoria: wizard, warrior ou barbarian: ");
         classe = sc.nextLine();
-            
-        System.out.println("Qual o nível?");
+        
+        System.out.printf("\nQual o nível?: ");
         int nivel = sc.nextInt();
         sc.nextLine(); // Consume the newline character
 
@@ -200,6 +194,7 @@ public class factoryExample {
         obj1.addSkill(newSkill);
         obj1.addSkill(newSkill2);
 
+        System.out.println("\n===== Player 1=====");
         System.out.println(obj1.getClass());
         obj1.showSkills();
 
@@ -210,7 +205,8 @@ public class factoryExample {
         MenuSkillResult resultSkill3 = menuSkill();
         Skill newSkill3 = ClassSkillFactory.create(resultSkill3.skillGroup, resultSkill3.skillName, resultSkill3.cost, resultSkill3.damage);
         obj2.addSkill(newSkill3);
-        
+
+        System.out.println("\n===== Player 2=====");
         System.out.println(obj2.getClass());
         obj2.showSkills();
         //inicialmente instancia-se o player e em seguida instancia as skills
