@@ -13,6 +13,6 @@ export class ConsertoDTO {
   @ApiProperty()
   descricao: string;
 
-  @DateColumn()
+  @ApiProperty()
   data: string;
 }
