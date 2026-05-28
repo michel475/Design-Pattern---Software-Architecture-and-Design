@@ -6,10 +6,10 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
     const config = new DocumentBuilder()
-    .setTitle('Associação Orquidofilia')
-    .setDescription('API de gerenciamento de orquidários e reproduções')
+    .setTitle('Manutenção de Aparelhos de Informática')
+    .setDescription('API de gerenciamento de manutenção de aparelhos de informática')
     .setVersion('1.0')
-    .addTag('orquidario-versao1')
+    .addTag('manutencao-informatica')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('swagger-ui', app, document, {
