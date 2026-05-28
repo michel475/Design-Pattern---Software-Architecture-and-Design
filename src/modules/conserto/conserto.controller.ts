@@ -9,7 +9,7 @@ export class ConsertoController {
 
   @Post()
   RegistrarConserto(@Body() consertoDTO: ConsertoDTO) {
-    return this.consertoFacade.RegistrarConserto(consertoDTO.nome, consertoDTO.cpf, consertoDTO.maquina_tipo, consertoDTO.descricao, consertoDTO.data);
+    return this.consertoFacade.RegistrarConserto(consertoDTO);
   }
 
   @Get('/listar')

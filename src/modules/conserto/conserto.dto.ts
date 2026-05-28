@@ -8,11 +8,11 @@ export class ConsertoDTO {
   cpf: string;
 
   @ApiProperty({example: ''})
-  maquina_tipo: string;
+  maquinaTipo: string;
 
   @ApiProperty()
   descricao: string;
 
   @ApiProperty()
-  data: string;
+  dataConserto: string;
 }
