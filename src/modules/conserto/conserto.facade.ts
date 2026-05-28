@@ -10,11 +10,11 @@ type Conserto = {
 let consertos: Conserto[] = [];
 
 type Input = {
-    nome;
-    cpf;
-    maquinaTipo;
-    descricao;
-    dataConserto;
+    nome: string;
+    cpf: string;
+    maquinaTipo: string;
+    descricao: string;
+    dataConserto: string;
 }
 
 export class ConsertoFacade {
@@ -23,8 +23,8 @@ export class ConsertoFacade {
     }   
 
     async RegistrarConserto(data: Input) {
-        const dispFac = DispositivoFactory.create(data.nome, data.cpf, data.maquinaTipo, data.descricao, data.dataConserto);
-        const conserto: Conserto = {nome:data.nome,cpf:data.cpf,dispositivo:dispFac};
+        const dispositivo = DispositivoFactory.create(data.nome, data.cpf, data.maquinaTipo, data.descricao, data.dataConserto);
+        const conserto: Conserto = {nome:data.nome,cpf:data.cpf,dispositivo:dispositivo};
         consertos.push(conserto);
         return conserto;
     }
