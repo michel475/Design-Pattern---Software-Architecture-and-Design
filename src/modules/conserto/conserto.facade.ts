@@ -1,5 +1,5 @@
 import { DispositivoFactory } from "./dispositivo-factory"
-import { Maquina } from "./maquina"
+import { Maquina } from "./maquinas/maquina"
 
 type Conserto = {
     nome: string;

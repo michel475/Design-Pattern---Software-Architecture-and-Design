@@ -1,7 +1,7 @@
-import { Celular } from "./celular"
-import { Notebook } from "./notebook"
-import { Impressora } from "./impressora"
-import { Maquina } from "./maquina"
+import { Celular } from "./maquinas/celular"
+import { Notebook } from "./maquinas/notebook"
+import { Impressora } from "./maquinas/impressora"
+import { Maquina } from "./maquinas/maquina"
 
 export class DispositivoFactory {
     constructor(){}

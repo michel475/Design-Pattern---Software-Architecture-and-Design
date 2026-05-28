@@ -2,17 +2,17 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class ConsertoDTO {
   @ApiProperty({ example: 'Nome do cliente' })
-  nome: string;
+  nome!: string;
 
   @ApiProperty({example: '000.000.000-00'})
-  cpf: string;
+  cpf!: string;
 
   @ApiProperty({example: ''})
-  maquinaTipo: string;
+  maquinaTipo!: string;
 
   @ApiProperty()
-  descricao: string;
+  descricao!: string;
 
   @ApiProperty()
-  dataConserto: string;
+  dataConserto!: string;
 }
